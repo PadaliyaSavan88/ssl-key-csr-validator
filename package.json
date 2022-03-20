@@ -3,18 +3,39 @@
   "version": "1.0.0",
   "description": "Check that if private key and csr key matches to SSL certificate or not.",
   "main": "src/index.js",
+  "dependencies": {
+    "which": "*",
+    "async": "*"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "fs-extra": "*",
+    "eslint": "*",
+    "pre-commit": "*"
+  },
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pretest": "eslint .",
+    "test": "mocha -R spec"
   },
+  "pre-commit": [
+    "test"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PadaliyaSavan88/ssl-key-csr-validator.git"
   },
   "keywords": [
-    "SSL"
+    "ssl",
+    "openssl",
+    "certificate",
+    "ssl",
+    "rsa",
+    "keys",
+    "matcher",
+    "utility"
   ],
   "author": "Savan Padaliya",
   "license": "ISC",
