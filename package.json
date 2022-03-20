@@ -1,43 +1,25 @@
 {
-  "name": "ssl-key-match",
-  "version": "0.0.4",
-  "description": "Check that RSA key matches SSL certificate and does not require password",
+  "name": "ssl-key-csr-validator",
+  "version": "1.0.0",
+  "description": "Check that if private key and csr key matches to SSL certificate or not.",
   "main": "src/index.js",
-  "dependencies": {
-    "which": "*",
-    "async": "*"
-  },
-  "devDependencies": {
-    "mocha": "*",
-    "fs-extra": "*",
-    "eslint": "*",
-    "pre-commit": "*"
+  "directories": {
+    "test": "test"
   },
   "scripts": {
-    "pretest": "eslint .",
-    "test": "mocha -R spec"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "pre-commit": [
-    "test"
-  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/prstr/ssl-key-match.git"
+    "url": "git+https://github.com/PadaliyaSavan88/ssl-key-csr-validator.git"
   },
   "keywords": [
-    "ssl",
-    "openssl",
-    "certificate",
-    "ssl",
-    "rsa",
-    "keys",
-    "matcher",
-    "utility"
+    "SSL"
   ],
-  "author": "Boris Okunskiy",
+  "author": "Savan Padaliya",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/prstr/ssl-key-match/issues"
+    "url": "https://github.com/PadaliyaSavan88/ssl-key-csr-validator/issues"
   },
-  "homepage": "https://github.com/prstr/ssl-key-match"
+  "homepage": "https://github.com/PadaliyaSavan88/ssl-key-csr-validator#readme"
 }

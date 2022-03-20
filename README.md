@@ -1,5 +1,4 @@
-# Check that SSL (X509) certificate matches it's private key
-# Check that SSL (X509) certificate matches it's csr key
+# Check that SSL (X509) certificate matches it's private key and csr key
 
 This tiny utility uses [Open SSL](https://openssl.org) to verify that:
 
