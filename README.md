@@ -14,7 +14,7 @@ This tiny utility uses [Open SSL](https://openssl.org) to verify that:
 To match certificate and private key, use below code example.
 
 ```js
-var ssl = require('ssl-key-match');
+var ssl = require('ssl-key-csr-validator');
 
 var certPem = fs.readFileSync('my-certificate.pem');
 var keyPem = fs.readFileSync('my-key.pem');
@@ -38,7 +38,7 @@ ssl.matchFiles('my-certificate.pem', 'my-key.pem', function(err, matches) {
 To match certificate and csr key, use below code example.
 
 ```js
-var ssl = require('ssl-key-match');
+var ssl = require('ssl-key-csr-validator');
 
 var certPem = fs.readFileSync('my-certificate.pem');
 var keyPem = fs.readFileSync('my-key.pem');

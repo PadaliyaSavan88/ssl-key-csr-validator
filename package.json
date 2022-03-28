@@ -1,6 +1,6 @@
 {
   "name": "ssl-key-csr-validator",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Check that if private key and csr key matches to SSL certificate or not.",
   "main": "src/index.js",
   "dependencies": {
